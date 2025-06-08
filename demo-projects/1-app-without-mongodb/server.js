@@ -30,8 +30,9 @@ app.get("/profile-picture", function (req, res) {
 app.get("/get-profile", function (req, res) {
   res.json({
     userid: 1,
-    name: "John Doe",
-    email: "john@example.com",
+    name: "Anna Smith",
+    email: "anna.smith@example.com",
+    interests: "coding",
   });
 });
 
