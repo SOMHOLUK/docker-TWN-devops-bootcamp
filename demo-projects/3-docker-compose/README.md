@@ -93,3 +93,12 @@ node server.js
 #### Step 9: Open your browser and go to [http://localhost:3000](http://localhost:3000). Edit the user profile there — the updated information should appear in the `users` collection of the `user-account` MongoDB database. The updated user profile information is saved permanently after refreshing the page as there is data persistence because of the connected MongoDB.
 
 #### ⚠️ Important: This data is only saved while the MongoDB container is running. If you stop and remove the MongoDB container the data will be lost.To keep the data even after restarting or recreating the MongoDB container, you need to use Docker volumes. This will be discussed later.
+
+#### Furthermore, if you wanted to stop the containers you could use the following command:
+
+```
+docker-compose -f mongo.yaml down
+
+```
+
+Not only does the last command remove the mongodb container and the mongo-express container, but it also removes the network that was created.
